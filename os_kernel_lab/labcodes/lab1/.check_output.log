@@ -1,0 +1,54 @@
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+07F8B4A0+07ECB4A0 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Hard Disk..(THU.CST) os is loading ...
+
+Special kernel symbols:
+  entry  0x00100000 (phys)
+  etext  0x00103649 (phys)
+  edata  0x0010fa16 (phys)
+  end    0x00110d68 (phys)
+Kernel executable memory footprint: 68KB
+ebp:0x00007b28   eip:0x001009a8 arg :0x00010094 0x00010094 0x00007b58 0x0010008e
+    kern/debug/kdebug.c:307: print_stackframe+24
+ebp:0x00007b38   eip:0x00100ca8 arg :0x00000000 0x00000000 0x00000000 0x00007ba8
+    kern/debug/kmonitor.c:125: mon_backtrace+10
+ebp:0x00007b58   eip:0x0010008e arg :0x00000000 0x00007b80 0xffff0000 0x00007b84
+    kern/init/init.c:52: grade_backtrace2+33
+ebp:0x00007b78   eip:0x001000bc arg :0x00000000 0xffff0000 0x00007ba4 0x00000029
+    kern/init/init.c:57: grade_backtrace1+40
+ebp:0x00007b98   eip:0x001000dc arg :0x00000000 0x00100000 0xffff0000 0x0000001d
+    kern/init/init.c:62: grade_backtrace0+23
+ebp:0x00007bb8   eip:0x00100104 arg :0x0010367c 0x00103660 0x00001352 0x00000000
+    kern/init/init.c:67: grade_backtrace+34
+ebp:0x00007be8   eip:0x00100051 arg :0x00000000 0x00000000 0x00000000 0x00007c4f
+    kern/init/init.c:30: kern_init+80
+ebp:0x00007bf8   eip:0x00007d76 arg :0xc031fcfa 0xc08ed88e 0x64e4d08e 0xfa7502a8
+    <unknow>: -- 0x00007d75 --
+++ setup timer interrupts
+100 ticks
+End of Test.
+kernel panic at kern/trap/trap.c:18:
+    EOT: kernel seems ok.
+stack trackback:
+ebp:0x00007ad0   eip:0x001009a8 arg :0x0010395c 0x00007b14 0x00000012 0x00007b4c
+    kern/debug/kdebug.c:307: print_stackframe+24
+ebp:0x00007b00   eip:0x00100d19 arg :0x00103a0e 0x00000012 0x001039f8 0x00000008
+    kern/debug/panic.c:27: __panic+103
+ebp:0x00007b20   eip:0x001018c8 arg :0x00007b58 0x00100319 0x001002c8 0x00007b4c
+    kern/trap/trap.c:0: print_ticks+65
+ebp:0x00007b50   eip:0x00101d93 arg :0x00007b7c 0x0010033e 0x0010398c 0x00007b94
+    kern/trap/trap.c:171: trap_dispatch+162
+ebp:0x00007b70   eip:0x00101f49 arg :0x00007b7c 0x00000000 0x00010094 0x00007be8
+    kern/trap/trap.c:230: trap+16
+ebp:0x00007be8   eip:0x00101f64 arg :0x00000000 0x00000000 0x00000000 0x00007c4f
+    kern/trap/trapentry.S:24: <unknown>+0
+ebp:0x00007bf8   eip:0x00007d76 arg :0xc031fcfa 0xc08ed88e 0x64e4d08e 0xfa7502a8
+    <unknow>: -- 0x00007d75 --
+Welcome to the kernel debug monitor!!
+Type 'help' for a list of commands.
+K> 
